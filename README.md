@@ -41,8 +41,8 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+apt-get remove docker docker-engine docker-ce
+apt-get install docker.io
 ```
 
 Kali on RPi 3 model B - aarch64
@@ -50,8 +50,8 @@ Kali on RPi 3 model B - aarch64
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 echo 'deb https://download.docker.com/linux/debian stretch stable' > /etc/apt/sources.list.d/docker.list
 apt-get update 
-apt-get remove docker docker-engine docker.io
-apt-get install docker-ce
+apt-get remove docker docker-engine docker-ce
+apt-get install docker.io
 ```
 
 Raspbian on RPi 3 model B+ - armv7l
@@ -59,8 +59,8 @@ Raspbian on RPi 3 model B+ - armv7l
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 echo 'deb https://download.docker.com/linux/debian stretch stable' > /etc/apt/sources.list.d/docker.list
 apt-get update 
-apt-get remove docker docker-engine docker.io
-apt-get install docker-ce
+apt-get remove docker docker-engine docker-ce
+apt-get install docker.io
 ```
 
 Raspbian Buster on RPi 4
@@ -70,9 +70,9 @@ apt-get upgrade
 reboot
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 echo 'deb https://download.docker.com/linux/debian stretch stable' > /etc/apt/sources.list.d/docker.list
-apt-get update
-apt-get remove docker docker-engine docker.io
-apt install --no-install-recommends docker-ce
+apt-get update 
+apt-get remove docker docker-engine docker-ce
+apt-get install docker.io
 ```
 
 # Requirements

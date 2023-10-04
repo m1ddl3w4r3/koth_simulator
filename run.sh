@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-
+#Check for repo updates
+git fetch --all
+git pull
+	
 KOTH_SSID="WCTF_KingOfTheHill"
 KOTH_IP="172.16.100.1"
 KOTH_SCOREBOARD="<not set>"
